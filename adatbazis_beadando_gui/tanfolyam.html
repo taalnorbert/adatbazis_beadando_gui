@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanfolyam Rögzítése</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div1">
+        <h1>Tanfolyam Rögzítése</h1>
+
+        <form action="/submit_tanfolyam" method="POST">
+            <label for="tanfolyam_nev">Tanfolyam neve:</label>
+            <input type="text" id="tanfolyam_nev" name="tanfolyam_nev" required>
+
+            <label for="kezdes_datuma">Kezdés dátuma:</label>
+            <input type="date" id="kezdes_datuma" name="kezdes_datuma" required>
+
+            <label for="befejezes_datuma">Befejezés dátuma:</label>
+            <input type="date" id="befejezes_datuma" name="befejezes_datuma">
+
+            <label for="oktato_azonosito">Oktató azonosítója:</label>
+            <input type="number" id="oktato_azonosito" name="oktato_azonosito">
+
+            <button type="submit">Adatok felvitele</button>
+        </form>
+
+        <a href="index.html">
+            <button class="btn btn-danger">Vissza a főoldalra</button>
+        </a>
+    </div>
+</body>
+</html>

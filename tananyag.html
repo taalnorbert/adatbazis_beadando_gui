@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanfolyam Rögzítése</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="div1 container mt-5">
+        <h1>Tananyag Rögzítése</h1>
+
+        <form action="/submit_tananyag" method="POST">
+            <div  class="row mb-3">
+            <div  class="col-md-6">
+            <label for="tananyag_nev">Tananyag neve:</label>
+            <input type="text" id="tananyag_nev" name="tananyag_nev" required>
+            </div>
+            <div class="col-md-6 mt-2">Tananyag tipusa:
+<div class="select">
+  <div
+    class="selected"
+    data-default="Elméleti"
+    data-three="Gyakorlati"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="1em"
+      viewBox="0 0 512 512"
+      class="arrow"
+    >
+      <path
+        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+      ></path>
+    </svg>
+  </div>
+  <div class="options">
+    <div title="all">
+        <input id="all" name="option" type="radio" checked="" />
+        <label class="option" for="all" data-txt="Elméleti"></label>
+      </div>
+    <div title="option-3">
+      <input id="option-3" name="option" type="radio" />
+      <label class="option" for="option-3" data-txt="Gyakorlati"></label>
+    </div>
+  </div>
+</div>
+            </div>
+            </div>
+
+
+
+            <button type="submit">Adatok felvitele</button>
+        </form>
+
+        <a href="index.html">
+            <button class="btn btn-danger">Vissza a főoldalra</button>
+        </a>
+    </div>
+</body>
+</html>
